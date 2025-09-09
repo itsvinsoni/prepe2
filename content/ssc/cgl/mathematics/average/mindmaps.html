@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepe: The Nervous System Infographic Bible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1f2937; /* A dark gray for text for better readability */
+        }
+        .prepe-orange { color: #FB923C; }
+        .prepe-green { color: #22C55E; }
+        .bg-prepe-orange { background-color: #FB923C; }
+        .bg-prepe-green { background-color: #22C55E; }
+        .border-prepe-orange { border-color: #FB923C; }
+        .border-prepe-green { border-color: #22C55E; }
+        .shadow-orange-lg { box-shadow: 0 10px 15px -3px rgba(251, 146, 60, 0.3), 0 4px 6px -2px rgba(251, 146, 60, 0.15); }
+        .shadow-green-lg { box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.3), 0 4px 6px -2px rgba(34, 197, 94, 0.15); }
+        .section-title {
+            font-weight: 900;
+            font-size: 3rem;
+            line-height: 1;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            font-weight: 600;
+            font-size: 1.25rem;
+            text-align: center;
+            color: #4b5563;
+            margin-bottom: 4rem;
+        }
+        /* Custom styles for infographic elements */
+        .info-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #e5e7eb;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .image-holder {
+            background-color: #f3f4f6;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #d1d5db;
+            min-height: 250px;
+        }
+        .flow-line::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            background-color: #e5e7eb;
+            z-index: -1;
+        }
+        .flow-line-h::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 2px;
+            background-color: #e5e7eb;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-lg z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-black prepe-orange">Prepe</h1>
+            <h2 class="text-xl font-bold text-gray-700 hidden md:block">The Ultimate Nervous System Guide</h2>
+            <button class="bg-prepe-green text-white font-bold py-2 px-6 rounded-full hover:bg-green-600 transition-colors">Start Learning</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- PAGE 1: Basic Introduction to the Nervous System -->
+        <section id="introduction" class="mb-24">
+            <h2 class="section-title"><span class="prepe-orange">Nervous System</span> ka Introduction</h2>
+            <p class="section-subtitle">मानव शरीर का संतुलन बनाए रखने वाला सिस्टम।</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="info-card border-t-4 border-prepe-orange">
+                    <h3 class="text-2xl font-bold mb-4">Mukhya Function (कार्य)</h3>
+                    <p class="text-lg text-gray-600">
+                        इसका सबसे ज़रूरी काम मानव शरीर में <strong>homeostasis</strong> (संतुलन) बनाए रखना है। यह शरीर के सभी हिस्सों के बीच communication का एक network है।
+                    </p>
+                </div>
+                <div class="info-card border-t-4 border-prepe-green">
+                    <h3 class="text-2xl font-bold mb-4">Composition (संरचना)</h3>
+                    <p class="text-lg text-gray-600">
+                        यह दो प्रकार के nervous tissue से बना है, जो मिलकर शरीर को control करते हैं।
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="info-card p-8 shadow-orange-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-prepe-orange p-3 rounded-full mr-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                        </div>
+                        <h3 class="text-3xl font-extrabold">Neuron (Nerve Cell)</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">यह nervous system की structural और functional unit है।</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><span class="prepe-orange font-bold mr-2">➔</span>यह system का basic building block है।</li>
+                        <li class="flex items-start"><span class="prepe-orange font-bold mr-2">➔</span>सूचना को receive, process और transmit करने में मदद करता है।</li>
+                        <li class="flex items-start"><span class="prepe-orange font-bold mr-2">➔</span>इसे nervous system का parenchyma भी कहा जाता है।</li>
+                    </ul>
+                </div>
+                <div class="info-card p-8 shadow-green-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-prepe-green p-3 rounded-full mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" /></svg>
+                        </div>
+                        <h3 class="text-3xl font-extrabold">Neuroglia (Glial Cells)</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">यह nervous system की supporting cells हैं।</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><span class="prepe-green font-bold mr-2">➔</span>ये system के maintenance के लिए ज़िम्मेदार हैं।</li>
+                        <li class="flex items-start"><span class="prepe-green font-bold mr-2">➔</span>ये neurons को support और protection देती हैं।</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: Neuron Anatomy -->
+        <section id="neuron-anatomy" class="mb-24">
+            <h2 class="section-title"><span class="prepe-orange">Neuron</span> ki Anatomy</h2>
+            <p class="section-subtitle">एक nerve cell के मुख्य भाग और उनके कार्य।</p>
+            <div class="relative">
+                <!-- Central Image Holder -->
+                <div class="flex justify-center items-center my-8">
+                    <div class="image-holder w-full md:w-1/2">
+                        <div class="text-center text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            <p class="font-semibold">Neuron Diagram Image</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Infographic Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="info-card">
+                        <h4 class="text-xl font-bold mb-2 prepe-orange">1. Cell Body (Soma)</h4>
+                        <p class="text-gray-600">इसमें cytoplasm, Nissl granules (protein synthesis के लिए) और dendrites होते हैं। Nissl granules, rough endoplasmic reticulum के समान हैं।</p>
+                    </div>
+                    <div class="info-card">
+                        <h4 class="text-xl font-bold mb-2 prepe-orange">2. Dendrites</h4>
+                        <p class="text-gray-600">ये branched structures हैं जो impulses (संकेत) को cell body की ओर ले जाते हैं।</p>
+                    </div>
+                    <div class="info-card">
+                        <h4 class="text-xl font-bold mb-2 prepe-orange">3. Axon</h4>
+                        <p class="text-gray-600">यह cell body से जुड़ा होता है और impulse को cell body से दूर ले जाता है। कुछ axons पर Myelin sheath की परत होती है, जो nodes of Ranvier पर नहीं होती।</p>
+                    </div>
+                    <div class="info-card">
+                        <h4 class="text-xl font-bold mb-2 prepe-orange">4. Terminal Buttons</h4>
+                        <p class="text-gray-600">इनमें neurotransmitters होते हैं, जो action potential generate करते हैं और signal को अगली cell तक पहुंचाते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: Neuroglia (Glial Cells) -->
+        <section id="neuroglia" class="mb-24">
+            <h2 class="section-title"><span class="prepe-green">Neuroglia</span> - The Supporting Cells</h2>
+            <p class="section-subtitle">Nervous system की देखभाल करने वाली 6 प्रकार की कोशिकाएं।</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="info-card border-l-4 border-prepe-green">
+                    <h4 class="text-xl font-bold mb-2">Schwann Cell</h4>
+                    <p class="text-gray-600">PNS neurons में पाई जाती हैं; PNS में myelin sheath का maintenance करती हैं।</p>
+                </div>
+                <div class="info-card border-l-4 border-prepe-green">
+                    <h4 class="text-xl font-bold mb-2">Oligodendrocyte Cell</h4>
+                    <p class="text-gray-600">CNS neurons में पाई जाती हैं; CNS में myelin sheath का maintenance करती हैं।</p>
+                </div>
+                <div class="info-card border-l-4 border-prepe-green">
+                    <h4 class="text-xl font-bold mb-2">Ependymal Cell</h4>
+                    <p class="text-gray-600">Epithelium जैसी दिखती हैं; brain cavities की lining बनाती हैं।</p>
+                </div>
+                <div class="info-card border-l-4 border-prepe-green">
+                    <h4 class="text-xl font-bold mb-2">Astrocyte Cell</h4>
+                    <p class="text-gray-600">Star-shaped; सबसे बड़ी neuroglia; Blood-Brain-Barrier (BBB) बनाती हैं।</p>
+                </div>
+                <div class="info-card border-l-4 border-prepe-green">
+                    <h4 class="text-xl font-bold mb-2">Microglial Cell</h4>
+                    <p class="text-gray-600">सबसे छोटी neuroglia; macrophages की तरह काम करती हैं (सफाई)।</p>
+                </div>
+                <div class="info-card border-l-4 border-prepe-green">
+                    <h4 class="text-xl font-bold mb-2">Satellite Cell</h4>
+                    <p class="text-gray-600">Sensory neuron के cell body को घेरती हैं और support करती हैं।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: Classification of the Nervous System -->
+        <section id="classification" class="mb-24">
+            <h2 class="section-title">Nervous System ka <span class="prepe-orange">Classification</span></h2>
+            <p class="section-subtitle">System के दो मुख्य भाग: Central और Peripheral।</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <!-- CNS Card -->
+                <div class="info-card w-full md:w-2/5 p-8 text-center shadow-orange-lg">
+                    <h3 class="text-3xl font-black prepe-orange mb-4">Central Nervous System (CNS)</h3>
+                    <p class="text-lg mb-4">यह शरीर का main control center है।</p>
+                    <div class="text-left space-y-2">
+                        <p><strong class="font-bold">Components:</strong> Brain (मस्तिष्क) और Spinal Cord (रीढ़ की हड्डी)।</p>
+                        <p><strong class="font-bold">Function:</strong> Sensory और motor information को integrate और coordinate करना; memory, learning, emotion जैसे higher functions को control करना।</p>
+                    </div>
+                </div>
+                <!-- Plus Icon -->
+                <div class="text-5xl font-thin text-gray-300">+</div>
+                <!-- PNS Card -->
+                <div class="info-card w-full md:w-2/5 p-8 text-center shadow-green-lg">
+                    <h3 class="text-3xl font-black prepe-green mb-4">Peripheral Nervous System (PNS)</h3>
+                    <p class="text-lg mb-4">यह CNS को शरीर के बाकी हिस्सों से जोड़ता है।</p>
+                    <div class="text-left space-y-2">
+                        <p><strong class="font-bold">Components:</strong> Cranial Nerves (brain से निकलने वाली) और Spinal Nerves (spinal cord से निकलने वाली)।</p>
+                        <p><strong class="font-bold">Function:</strong> CNS तक signals पहुंचाना और CNS से signals शरीर के अंगों तक ले जाना।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: The Brain - The Command Center -->
+        <section id="brain-intro" class="mb-24">
+            <h2 class="section-title">The <span class="prepe-orange">Brain</span>: Command Center</h2>
+            <p class="section-subtitle">शरीर का information processing और control करने वाला अंग।</p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="info-card p-8 h-full">
+                        <h3 class="text-2xl font-bold mb-4">Brain ke Facts</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div><p><strong class="prepe-orange text-3xl font-black">3 pounds</strong> <br> (1300-1400 gm) पुरुषों में औसत वज़न।</p></div>
+                            <div><p><strong class="prepe-orange text-3xl font-black">1250 gm</strong> <br> महिलाओं में औसत वज़न।</p></div>
+                            <div><p><strong class="prepe-orange text-3xl font-black">100+ Billion</strong> <br> Neurons की संख्या।</p></div>
+                            <div><p><strong class="prepe-orange text-3xl font-black">Cranium</strong> <br> हड्डियों का खोल जो brain को protect करता है।</p></div>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-8 mb-4">Meninges: Protective Layers</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-100 p-4 rounded-lg"><strong>1. Dura mater (Outer):</strong> सबसे बाहरी और मज़बूत परत।</div>
+                            <div class="bg-gray-100 p-4 rounded-lg"><strong>2. Arachnoid mater (Middle):</strong> बीच की, मकड़ी के जाले जैसी परत।</div>
+                            <div class="bg-gray-100 p-4 rounded-lg"><strong>3. Pia mater (Inner):</strong> सबसे अंदर की, brain से चिपकी हुई नाज़ुक परत।</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-holder">
+                    <div class="text-center text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        <p class="font-semibold">Brain Layers Image</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 6: Forebrain - Cerebrum & Lobes -->
+        <section id="forebrain-cerebrum" class="mb-24">
+            <h2 class="section-title">Forebrain (Prosencephalon): <span class="prepe-orange">Cerebrum</span></h2>
+            <p class="section-subtitle">Brain का सबसे बड़ा हिस्सा (80%), जो memory, speech, thinking को control करता है।</p>
+            <div class="info-card p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Cerebrum ki Sanrachna</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><strong>Cortex:</strong> बाहरी हिस्सा grey रंग का होता है।</li>
+                            <li><strong>Inner Part:</strong> अंदर का हिस्सा white रंग का होता है।</li>
+                            <li><strong>Gyri & Sulci:</strong> इसमें कई folds (Gyri) और grooves (Sulci) होते हैं।</li>
+                            <li><strong>Hemispheres:</strong> Longitudinal fissure इसे right और left hemisphere में बांटता है।</li>
+                        </ul>
+                    </div>
+                    <div class="image-holder">
+                        <div class="text-center text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            <p class="font-semibold">Cerebral Lobes Image</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-extrabold my-8 text-center">Cerebral Lobes & Areas</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-orange-100 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2 text-orange-800">Frontal Lobe</h4>
+                        <p><strong>Broca's area:</strong> Speech (बोलना)</p>
+                        <p><strong>Prefrontal area:</strong> Thinking, intelligence</p>
+                        <p><strong>Motor area:</strong> Motor activity</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2 text-green-800">Parietal Lobe</h4>
+                        <p><strong>Somatosensory area:</strong> Pain, pressure, touch</p>
+                        <p><strong>Gustatory area:</strong> Taste (स्वाद)</p>
+                    </div>
+                    <div class="bg-orange-100 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2 text-orange-800">Temporal Lobe</h4>
+                        <p><strong>Acoustic area:</strong> Hearing (सुनना)</p>
+                        <p><strong>Hippocampus area:</strong> Memory (याददाश्त)</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2 text-green-800">Occipital Lobe</h4>
+                        <p><strong>Visual area:</strong> Vision (देखना)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PAGE 7: Diencephalon, Midbrain & Hindbrain -->
+        <section id="other-brain-parts" class="mb-24">
+            <h2 class="section-title">Brain ke <span class="prepe-green">Doosre</span> Hisse</h2>
+            <p class="section-subtitle">Forebrain, Midbrain और Hindbrain के अन्य महत्वपूर्ण भाग।</p>
+            
+            <!-- Diencephalon & Midbrain -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="info-card p-8 border-t-4 border-prepe-orange">
+                    <h3 class="text-2xl font-bold mb-4">Diencephalon (Forebrain ka hissa)</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Thalamus: The Relay Station</h4>
+                            <p class="text-gray-600">यह sensory inputs को receive करके cerebrum तक भेजने वाला एक ज़रूरी relay station है।</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Hypothalamus: The Regulator</h4>
+                            <p class="text-gray-600">यह autonomic nervous system, body temperature, भूख-प्यास, sleep cycle और endocrine system को regulate करता है।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card p-8 border-t-4 border-prepe-green">
+                    <h3 class="text-2xl font-bold mb-4">Midbrain (Mesencephalon)</h3>
+                    <p class="text-gray-600 mb-4">यह vision, hearing, motor control, sleep/wake cycle, और temperature regulation से जुड़ा है।</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Dopamine-producing neurons excitation और motivation में role play करते हैं।</li>
+                        <li>Red nucleus conscious muscle movement को control करता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hindbrain -->
+            <div class="info-card p-8 bg-gray-50">
+                <h3 class="text-3xl font-extrabold mb-6 text-center">Hindbrain (Rhombencephalon)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-xl mb-2 prepe-orange">Pons</h4>
+                        <p>यह brain stem का सबसे लंबा हिस्सा है। Respiration, swallowing, bladder control, hearing, equilibrium जैसे functions को control करता है।</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-xl mb-2 prepe-green">Cerebellum</h4>
+                        <p>दूसरा सबसे बड़ा हिस्सा। Voluntary body movements, balance, और equilibrium को coordinate करता है। इसमें brain के 50% neurons होते हैं।</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-xl mb-2 prepe-orange">Medulla Oblongata</h4>
+                        <p>Brain stem का सबसे निचला हिस्सा। Heart rate, blood pressure, respiratory rate, और reflex actions (vomiting, cough, sneezing) को control करता है।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PAGE 8: Ventricles & CSF Flow -->
+        <section id="csf-flow" class="mb-24">
+            <h2 class="section-title">Ventricles aur <span class="prepe-orange">CSF Flow</span></h2>
+            <p class="section-subtitle">Brain के अंदर मौजूद cavities और उनमें बहने वाला fluid।</p>
+            <div class="info-card p-8">
+                <h3 class="text-2xl font-bold mb-6">Cerebrospinal Fluid (CSF)</h3>
+                <p class="text-lg text-gray-600 mb-8">यह brain और spinal cord के चारों ओर एक clear fluid है जो protection, nutrition और waste removal का काम करता है। यह choroid plexus द्वारा बनाया जाता है।</p>
+                
+                <h4 class="text-xl font-bold mb-4 text-center">The Flow of CSF</h4>
+                <div class="relative flex flex-col items-center">
+                    <!-- Flowchart items -->
+                    <div class="w-3/4 md:w-1/2 bg-prepe-orange text-white p-4 rounded-lg text-center mb-8 z-10"><strong>1. Lateral Ventricles (2)</strong></div>
+                    <div class="flow-line h-8 absolute top-14"></div>
+                    <div class="w-3/4 md:w-1/2 bg-white border-2 border-prepe-orange p-4 rounded-lg text-center my-8 z-10"><strong>2. 3rd Ventricle</strong></div>
+                    <div class="flow-line h-8 absolute top-40"></div>
+                    <div class="w-3/4 md:w-1/2 bg-prepe-green text-white p-4 rounded-lg text-center my-8 z-10"><strong>3. Cerebral Aqueduct</strong></div>
+                    <div class="flow-line h-8 absolute top-64"></div>
+                    <div class="w-3/4 md:w-1/2 bg-white border-2 border-prepe-green p-4 rounded-lg text-center my-8 z-10"><strong>4. 4th Ventricle</strong></div>
+                    <div class="flow-line h-8 absolute top-96"></div>
+                    <div class="w-3/4 md:w-1/2 bg-prepe-orange text-white p-4 rounded-lg text-center mt-8 z-10"><strong>5. Subarachnoid Space</strong></div>
+                </div>
+                <p class="text-center mt-8 text-gray-600">अंत में, CSF, subarachnoid villi द्वारा reabsorb हो जाता है।</p>
+            </div>
+        </section>
+
+        <!-- PAGE 9: The Spinal Cord -->
+        <section id="spinal-cord" class="mb-24">
+            <h2 class="section-title">The <span class="prepe-green">Spinal Cord</span></h2>
+            <p class="section-subtitle">Vertebral column में स्थित, brain को शरीर से जोड़ने वाला pathway।</p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="info-card p-8 lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Structure and Length</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>यह foramen magnum से 1st lumbar vertebra तक फैली एक cylindrical structure है।</li>
+                        <li><strong>Length:</strong> 45 cm (male), 61 cm (female).</li>
+                        <li><strong>Conus Medullaris:</strong> इसका अंत cone-shaped होता है।</li>
+                        <li><strong>Cauda Equina:</strong> Conus medullaris से निकलने वाला nerves का bundle।</li>
+                        <li><strong>Filum Terminale:</strong> सबसे लंबी nerve।</li>
+                    </ul>
+                </div>
+                <div class="info-card p-8 bg-green-50">
+                    <h3 class="text-2xl font-bold mb-4">Vertebrae</h3>
+                    <p class="text-gray-700">यह 33 vertebrae (26 bones) से घिरी होती है:</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>7 Cervical</li>
+                        <li>12 Thoracic</li>
+                        <li>5 Lumbar</li>
+                        <li>5 Sacrum (fused)</li>
+                        <li>4 Coccyx (fused)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 10: PNS - Cranial Nerves -->
+        <section id="cranial-nerves" class="mb-24">
+            <h2 class="section-title"><span class="prepe-orange">Cranial Nerves</span> (12 Pairs)</h2>
+            <p class="section-subtitle">Brain से सीधे निकलने वाली nerves जो सिर, गर्दन और अंगों को control करती हैं।</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Dynamically creating cards for brevity. Real implementation would list all 12. -->
+                <div class="info-card"><h4 class="font-bold">I. Olfactory</h4><p>Sensory; Smell (गंध)।</p></div>
+                <div class="info-card"><h4 class="font-bold">II. Optic</h4><p>Sensory; Vision (दृष्टि)।</p></div>
+                <div class="info-card"><h4 class="font-bold">III. Oculomotor</h4><p>Motor; Eye movement।</p></div>
+                <div class="info-card"><h4 class="font-bold">IV. Trochlear</h4><p>Motor; Eye movement।</p></div>
+                <div class="info-card"><h4 class="font-bold">V. Trigeminal</h4><p>Largest; Mixed; Face sensation, chewing।</p></div>
+                <div class="info-card"><h4 class="font-bold">VI. Abducens</h4><p>Motor; Eye movement।</p></div>
+                <div class="info-card"><h4 class="font-bold">VII. Facial</h4><p>Mixed; Facial expression, taste।</p></div>
+                <div class="info-card"><h4 class="font-bold">VIII. Vestibulocochlear</h4><p>Sensory; Hearing, balance।</p></div>
+                <div class="info-card"><h4 class="font-bold">IX. Glossopharyngeal</h4><p>Mixed; Taste, swallowing।</p></div>
+                <div class="info-card"><h4 class="font-bold">X. Vagus</h4><p>Mixed; Heart, lungs, digestion।</p></div>
+                <div class="info-card"><h4 class="font-bold">XI. Accessory</h4><p>Motor; Shoulder and head movement।</p></div>
+                <div class="info-card"><h4 class="font-bold">XII. Hypoglossal</h4><p>Motor; Tongue movement।</p></div>
+            </div>
+        </section>
+
+        <!-- PAGE 11: PNS - Spinal Nerves & Plexuses -->
+        <section id="spinal-nerves" class="mb-24">
+            <h2 class="section-title"><span class="prepe-green">Spinal Nerves</span> & Plexuses</h2>
+            <p class="section-subtitle">Spinal cord से निकलने वाली 31 pairs of mixed nerves और उनके networks।</p>
+            <div class="info-card p-8">
+                <h3 class="text-2xl font-bold mb-6">Plexuses: The Nerve Networks</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2">Cervical Plexus (C1-C4)</h4>
+                        <p>Head, neck, shoulders की skin/muscles को supply करता है।</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2">Brachial Plexus (C5-T1)</h4>
+                        <p>Shoulder और upper limbs को supply करता है।</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2">Lumbar Plexus (L1-L4)</h4>
+                        <p>Abdominal wall, genitals, और lower limb को supply करता है।</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2">Sacrum Plexus (L4-S5)</h4>
+                        <p>Buttocks, perineum, और lower limbs को supply करता है।</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-xl mb-2">Coccygeal Plexus (S3-C1)</h4>
+                        <p>Coccygeal area और pelvic cavity को supply करता है।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PAGE 12: Physiological Divisions & Reflex Arc -->
+        <section id="physiological-divisions" class="mb-24">
+            <h2 class="section-title">Physiological <span class="prepe-orange">Divisions</span></h2>
+            <p class="section-subtitle">Voluntary और Involuntary actions को control करने वाले systems।</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="info-card p-8">
+                    <h3 class="text-2xl font-bold mb-4">Somatic vs. Autonomic</h3>
+                    <p class="mb-4"><strong>Somatic:</strong> Voluntary control (जैसे skeletal muscles का movement)।</p>
+                    <p><strong>Autonomic (ANS):</strong> Involuntary control (जैसे heart rate, digestion)।</p>
+                </div>
+                <div class="info-card p-8">
+                    <h3 class="text-2xl font-bold mb-4">Reflex Arc</h3>
+                    <p>यह reflexes को control करने वाला neural pathway है। इसमें signal brain तक जाने से पहले spinal cord में synapse होता है, जिससे तेज़ action होता है।</p>
+                </div>
+            </div>
+            <div class="mt-12 info-card p-8 bg-gray-50">
+                <h3 class="text-3xl font-extrabold mb-6 text-center">Autonomic Nervous System (ANS)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-orange-100 p-6 rounded-lg border-l-4 border-prepe-orange">
+                        <h4 class="font-bold text-xl mb-2">Sympathetic (Fight or Flight)</h4>
+                        <p>Stress या खतरे की स्थिति में शरीर को तैयार करता है।</p>
+                        <ul class="list-disc list-inside mt-2">
+                            <li>Heart rate बढ़ाता है।</li>
+                            <li>Pupils dilate करता है।</li>
+                            <li>Digestion रोकता है।</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-lg border-l-4 border-prepe-green">
+                        <h4 class="font-bold text-xl mb-2">Parasympathetic (Rest and Digest)</h4>
+                        <p>शरीर को शांत करता है और homeostasis बनाए रखता है।</p>
+                        <ul class="list-disc list-inside mt-2">
+                            <li>Heart rate घटाता है।</li>
+                            <li>Pupils constrict करता है।</li>
+                            <li>Digestion stimulate करता है।</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 13: MEGA INTERCONNECTED WALL -->
+        <section id="mega-wall">
+            <h2 class="section-title">The <span class="prepe-orange">Mega</span> Interconnected <span class="prepe-green">Wall</span></h2>
+            <p class="section-subtitle">Nervous System के सभी concepts का एक visual summary।</p>
+            <div class="info-card p-8 overflow-x-auto">
+                <div class="min-w-max">
+                    <!-- This is a simplified representation of a complex mind map -->
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gray-800 text-white p-6 rounded-full font-black text-2xl">NERVOUS SYSTEM</div>
+                    </div>
+                    <div class="flex justify-around mt-8">
+                        <!-- CNS Branch -->
+                        <div class="text-center relative flow-line-h">
+                            <div class="bg-prepe-orange text-white p-4 rounded-lg font-bold">CNS</div>
+                            <div class="flex justify-around mt-6 gap-4">
+                                <div class="bg-orange-100 p-3 rounded-lg">Brain</div>
+                                <div class="bg-orange-100 p-3 rounded-lg">Spinal Cord</div>
+                            </div>
+                        </div>
+                        <!-- PNS Branch -->
+                        <div class="text-center relative flow-line-h">
+                            <div class="bg-prepe-green text-white p-4 rounded-lg font-bold">PNS</div>
+                             <div class="flex justify-around mt-6 gap-4">
+                                <div class="bg-green-100 p-3 rounded-lg">Cranial Nerves</div>
+                                <div class="bg-green-100 p-3 rounded-lg">Spinal Nerves</div>
+                                <div class="bg-green-100 p-3 rounded-lg">Autonomic</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-12">
+                        <h4 class="font-bold text-xl">Connections</h4>
+                        <p class="text-gray-600 mt-2">Medulla (CNS) controls Heart Rate (regulated by ANS in PNS).</p>
+                        <p class="text-gray-600">Spinal Cord (CNS) is the origin for Spinal Nerves (PNS).</p>
+                        <p class="text-gray-600">Sensory nerves (PNS) send info to the Brain (CNS).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-24">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h2 class="text-3xl font-black prepe-orange">Prepe</h2>
+            <p class="mt-2">Your Ultimate Guide to Complex Topics.</p>
+            <p class="mt-4 text-sm text-gray-400">&copy; 2024 Prepe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
